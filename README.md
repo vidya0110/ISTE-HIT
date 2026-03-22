@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Professional Portfolio</title>
+    <style>
+        /* 1. RESET AND LAYOUT SETUP */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            height: 100vh; /* Keeps it full page */
+            padding: 15px;
+            overflow: hidden; /* Prevents scrolling for the "App" look */
+        }
+
+        .container {
+            display: grid;
+            grid-template-rows: 80px 1fr 80px; /* Top, Middle, Bottom */
+            grid-gap: 15px;
+            height: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        /* 2. SHARED BOX STYLING (The Sketch Look) */
+        .box {
+            border: 2px solid #333;
+            border-radius: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 4px 4px 0px rgba(0,0,0,0.05);
+        }
+
+        /* 3. SECTION COLORS (Matched to your image) */
+        .navbar { 
+            background-color: #c1f0c1; /* Light Green */
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 0 40px;
+        }
+
+        .middle-row {
+            display: grid;
+            grid-template-columns: 220px 1fr 220px; /* Left, Main, Right */
+            grid-gap: 15px;
+        }
+
+        .left-sidebar { background-color: #ffd1d1; } /* Light Pink */
+        .main-content { background-color: #a1ede0; } /* Teal/Cyan */
+        .right-sidebar { background-color: #ffd1d1; } /* Light Pink */
+        
+        .footer { 
+            background-color: #fff4bd; /* Light Yellow */
+            position: relative; /* For Logo positioning */
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        /* 4. CONTENT STYLING */
+        h1 { font-size: 2.5rem; color: #222; margin-bottom: 10px; }
+        h3 { margin-bottom: 10px; text-transform: uppercase; font-size: 0.9rem; letter-spacing: 1px; }
+        p { color: #444; line-height: 1.5; font-size: 0.95rem; }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+
+        .btn {
+            margin-top: 20px;
+            padding: 12px 25px;
+            background: #333;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #555; }
+
+        /* 5. LOGO IMAGE AREA */
+        .logo-area {
+            position: absolute;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #96d1ff; /* Blue from sketch */
+            border: 2px solid #333;
+            border-radius: 50%;
+            overflow: hidden; /* Clips image into circle */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-area img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Prevents image stretching */
+        }
+
+        /* Responsive Fix for small screens */
+        @media (max-width: 800px) {
+            .middle-row { grid-template-columns: 1fr; }
+            .left-sidebar, .right-sidebar { display: none; }
+            body { overflow: auto; } /* Allow scroll on mobile */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- TOP NAVBAR -->
+        <header class="box navbar">
+            <div style="font-weight: bold; font-size: 1.2rem;">PORTFOLIO</div>
+            <nav class="nav-links">
+                <a href="#">About</a>
+                <a href="#">Projects</a>
+                <a href="#">Contact</a>
+            </nav>
+        </header>
+
+        <!-- MIDDLE SECTION -->
+        <div class="middle-row">
+            <!-- LEFT SIDEBAR -->
+            <aside class="box left-sidebar">
+                <h3 style="font-weight: bold;">Skills</h3>
+                <p>C Programming</p>
+                <p>Python</p>
+                <p>MySQL</p>
+                <p>Problem Solving</p>
+            </aside>
+
+            <!-- MAIN BOX -->
+            <main class="box main-content">
+                <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;">I am Vidya</h1>
+                <h1>An Engineering Student</h1>
+                <p>In process of learning of Building digital experiences that combine <br> functionality with beautiful design.</p>
+                <button class="btn">View My Projects</button>
+            </main>
+
+            <!-- RIGHT SIDEBAR -->
+            <aside class="box right-sidebar">
+                <h3>Experience</h3>
+                <p>1st year B.Tech student<br>Coding</p>
+                <br>
+                <h3>Socials</h3>
+                <a href="https://www.linkedin.com/in/vidya-das-a2205b2a0" style="color:#333;">LinkedIn</a><br>
+                <a href="https://github.com/vidya0110" style="color:#333;">GitHub</a>
+            </aside>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="box footer">
+            <div class="footer-text">
+               <h3>Contact</h3>
+                    <p style="font-size: medium;">Email:
+                    kumari.vidya2007@gmail.com<br>
+                </p>
+            </div>
+
+            <!-- LOGO AREA WITH IMAGE -->
+            <div class="logo-area">
+                <!-- Replace 'your-image.jpg' with your actual photo or logo path -->
+                                <img src="https://img.freepik.com/premium-vector/v-initials-logo-design-initial-letter-logo-creative-luxury-logo-template_773552-140.jpg"; alt="My Logo">
+
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
