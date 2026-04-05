@@ -1,72 +1,112 @@
-🌐 Personal Portfolio Website
+# 🌐 Professional Portfolio Website
 
-This is a modern, responsive personal portfolio website built using HTML and CSS. It showcases personal information, skills, projects, and contact details in a clean, app-like layout.
+A clean, modern, and responsive **personal portfolio website** built using pure **HTML and CSS**. This project showcases a structured layout with a visually appealing “app-like” design, perfect for students and developers to present their skills, projects, and contact information.
 
-📌 Features
-🎨 Minimal and aesthetic UI design (sketch-style layout)
-📱 Responsive design for mobile and desktop
-🧭 Navigation bar with sections (About, Projects, Contact)
+---
 
-📊 Sidebar sections for:
-Skills
-Experience
-Social links
-🧑‍💻 Main section with introduction and call-to-action
-📬 Footer with contact details and logo
-🛠️ Technologies Used
-HTML5
-CSS3 (Grid + Flexbox)
-📂 Project Structure
+## ✨ Features
+
+* 📌 Minimal and professional UI design
+* 🎨 Soft color palette with “sketch-style” bordered layout
+* 📱 Responsive design for smaller screens
+* 🧩 Grid-based layout (Navbar, Sidebar, Main Content, Footer)
+* 👩‍💻 Sections for Skills, Experience, and Social Links
+* 🔗 Integrated GitHub & LinkedIn links
+* 🖼️ Circular logo/profile image support
+
+---
+
+## 🛠️ Technologies Used
+
+* HTML5
+* CSS3 (Grid & Flexbox)
+* No external libraries or frameworks
+
+---
+
+## 📂 Project Structure
+
+```
 portfolio/
-│── index.html   # Main HTML file (contains CSS inside <style>)
-🚀 How to Run
-Download or clone this repository
-Open the file:
-index.html
-Run it in any browser (Chrome, Edge, Firefox, etc.)
-🎯 Sections Overview
-🔝 Navbar
-Displays site title and navigation links
-📚 Left Sidebar
-Lists technical skills:
-    C Programming
-    Python
-    MySQL
-    Problem Solving
-🧑‍💻 Main Content
-Introduction:
-Name
-Role (Engineering Student)
-Short description
-"View My Projects" button
+│── index.html   # Main HTML file (contains structure + styling)
+```
 
-📈 Right Sidebar
-Experience details
-Social links:
-LinkedIn
-GitHub
+---
 
-📩 Footer
-Contact information (email)
-Circular logo/image section
-📱 Responsiveness
-On screens smaller than 800px:
-Sidebars are hidden
-Layout becomes single-column
-Scrolling is enabled
-🎨 Customization
+## 🚀 Getting Started
 
-You can easily customize:
+1. Clone this repository:
 
-✏️ Name and description → Edit inside <main>
-🧠 Skills → Edit left sidebar
-🔗 Social links → Replace URLs
-🖼️ Logo → Change image source:
+```
+git clone https://github.com/your-username/portfolio.git
+```
+
+2. Open the project folder:
+
+```
+cd portfolio
+```
+
+3. Run the project:
+
+* Simply open `index.html` in your browser
+
+---
+
+## 🖥️ Layout Overview
+
+* **Navbar (Top):** Navigation links (About, Projects, Contact)
+* **Left Sidebar:** Skills section
+* **Main Content:** Introduction and call-to-action
+* **Right Sidebar:** Experience and social links
+* **Footer:** Contact details and logo
+
+---
+
+## 📱 Responsive Behavior
+
+* On smaller screens:
+
+  * Sidebars are hidden
+  * Layout becomes single-column
+  * Scrolling is enabled for better usability
+
+---
+
+## 🎯 Customization
+
+You can easily personalize this portfolio:
+
+* ✏️ Edit name and description in the main section
+* 🧠 Update skills in the left sidebar
+* 🔗 Replace social links with your own
+* 🖼️ Change logo image in:
+
+```
 <img src="your-image.jpg">
-🎨 Colors → Modify CSS background colors
-💡 Future Improvements
-Add multiple pages or sections (About, Projects)
-Integrate JavaScript for interactivity
-Add project showcase with images
-Include animations
-Connect contact form functionality
+```
+
+* 🎨 Modify colors in the CSS section
+
+---
+
+## 📧 Contact
+
+* Email: [kumari.vidya2007@gmail.com](mailto:kumari.vidya2007@gmail.com)
+* LinkedIn: https://www.linkedin.com/in/vidya-das-a2205b2a0
+* GitHub: https://github.com/vidya0110
+
+---
+
+## 📌 Future Improvements
+
+* Add project showcase section
+* Add animations and transitions
+* Integrate dark mode
+* Convert into React or full-stack portfolio
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for personal and educational purposes.
